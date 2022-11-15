@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/LOOP MENU.wav-c27d14a43808a3a162be9dd0a440c2f7.sample"
+
+[deps]
+
+source_file="res://sonidos/LOOP MENU.wav"
+dest_files=[ "res://.import/LOOP MENU.wav-c27d14a43808a3a162be9dd0a440c2f7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
