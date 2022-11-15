@@ -1,0 +1,585 @@
+[gd_scene load_steps=87 format=2]
+
+[ext_resource path="res://FONDO/fondo_0023_FONDO-ESCENARIO-LENTO-(COMEDIA).png" type="Texture" id=1]
+[ext_resource path="res://BAILARINA GIRO/04 GIRO.png" type="Texture" id=2]
+[ext_resource path="res://personaje.gd" type="Script" id=3]
+[ext_resource path="res://botones/pausa.png" type="Texture" id=4]
+[ext_resource path="res://Object.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Object2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Node2D.gd" type="Script" id=7]
+[ext_resource path="res://BAILARINA GIRO/09 GIRO.png" type="Texture" id=8]
+[ext_resource path="res://BAILARINA GIRO/11 GIRO.png" type="Texture" id=9]
+[ext_resource path="res://BAILARINA GIRO/06 GIRO.png" type="Texture" id=10]
+[ext_resource path="res://BAILARINA GIRO/14 GIRO.png" type="Texture" id=11]
+[ext_resource path="res://BAILARINA GIRO/01 GIRO .png" type="Texture" id=12]
+[ext_resource path="res://BAILARINA GIRO/02 GIRO.png" type="Texture" id=13]
+[ext_resource path="res://BAILARINA GIRO/10 GIRO.png" type="Texture" id=14]
+[ext_resource path="res://BAILARINA GIRO/03 GIRO.png" type="Texture" id=15]
+[ext_resource path="res://BAILARINA GIRO/07 GIRO.png" type="Texture" id=16]
+[ext_resource path="res://BAILARINA GIRO/12 GIRO.png" type="Texture" id=17]
+[ext_resource path="res://BAILARINA GIRO/13 GIRO.png" type="Texture" id=18]
+[ext_resource path="res://BAILARINA GIRO/05 GIRO.png" type="Texture" id=19]
+[ext_resource path="res://BAILARINA GIRO/08 GIRO.png" type="Texture" id=20]
+[ext_resource path="res://Main.gd" type="Script" id=21]
+[ext_resource path="res://sonidos/CANCION JUEGO SIN LOOP.wav" type="AudioStream" id=22]
+[ext_resource path="res://interfaz.gd" type="Script" id=23]
+[ext_resource path="res://fuentes/JosefinSans-Bold.ttf" type="DynamicFontData" id=24]
+[ext_resource path="res://FONDO/fondo_0001_PUBLICO-2.png" type="Texture" id=25]
+[ext_resource path="res://FONDO/fondo_0012_LUZ-DER-4.png" type="Texture" id=26]
+[ext_resource path="res://FONDO/fondo_0019_LUZ-IZQ-2.png" type="Texture" id=27]
+[ext_resource path="res://FONDO/fondo_0003_CORTINITA-2.png" type="Texture" id=28]
+[ext_resource path="res://FONDO/fondo_0020_LUZ-IZQ-1.png" type="Texture" id=29]
+[ext_resource path="res://FONDO/fondo_0017_LUZ-IZQ-4.png" type="Texture" id=30]
+[ext_resource path="res://FONDO/fondo_0022_FONDO-ESCENARIO-RAPIDO-(DRAMA).png" type="Texture" id=31]
+[ext_resource path="res://FONDO/fondo_0021_CORTINAS-1.png" type="Texture" id=32]
+[ext_resource path="res://FONDO/fondo_0014_LUZ-DER-2.png" type="Texture" id=33]
+[ext_resource path="res://FONDO/fondo_0015_LUZ-DER-1.png" type="Texture" id=34]
+[ext_resource path="res://FONDO/fondo_0002_PUBLICO-1.png" type="Texture" id=35]
+[ext_resource path="res://FONDO/fondo_0000_PUBLICO-3.png" type="Texture" id=36]
+[ext_resource path="res://FONDO/fondo_0024_FONDO-ESCENARIO.png" type="Texture" id=37]
+[ext_resource path="res://sonidos/aplausos.wav" type="AudioStream" id=38]
+[ext_resource path="res://sonidos/flores.wav" type="AudioStream" id=39]
+[ext_resource path="res://sonidos/tomate.wav" type="AudioStream" id=40]
+[ext_resource path="res://sonidos/UI select.wav" type="AudioStream" id=41]
+[ext_resource path="res://Object3.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Object4.tscn" type="PackedScene" id=43]
+[ext_resource path="res://Object5.tscn" type="PackedScene" id=44]
+[ext_resource path="res://sonidos/abucheo.wav" type="AudioStream" id=45]
+[ext_resource path="res://Object6.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Object7.tscn" type="PackedScene" id=47]
+[ext_resource path="res://sonidos/botitas.wav" type="AudioStream" id=48]
+[ext_resource path="res://sonidos/comedia.wav" type="AudioStream" id=49]
+[ext_resource path="res://sonidos/pianocrash.wav" type="AudioStream" id=50]
+[ext_resource path="res://sonidos/Luz.wav" type="AudioStream" id=51]
+[ext_resource path="res://sonidos/drama.wav" type="AudioStream" id=52]
+[ext_resource path="res://botones/ESTRELLA.png" type="Texture" id=53]
+[ext_resource path="res://botones/CORAZON.png" type="Texture" id=54]
+[ext_resource path="res://botones/boton continuar-01.png" type="Texture" id=55]
+[ext_resource path="res://botones/boton continuar apretado-01.png" type="Texture" id=56]
+[ext_resource path="res://botones/botones_hover/boton continuar-02.png" type="Texture" id=57]
+[ext_resource path="res://botones/botones_hover/boton salir-02.png" type="Texture" id=58]
+[ext_resource path="res://botones/boton SALIR apretado-01.png" type="Texture" id=59]
+[ext_resource path="res://botones/sboton salir-01.png" type="Texture" id=60]
+[ext_resource path="res://botones/Creditos -01.png" type="Texture" id=61]
+[ext_resource path="res://botones/creditos apretado-01.png" type="Texture" id=62]
+[ext_resource path="res://botones/botones_hover/Creditos-02.png" type="Texture" id=63]
+[ext_resource path="res://botones/BOTON VOLVER apretado-01.png" type="Texture" id=64]
+[ext_resource path="res://botones/botones_hover/Boton VOLVER-02.png" type="Texture" id=65]
+[ext_resource path="res://botones/Boton VOLVER -01.png" type="Texture" id=66]
+[ext_resource path="res://botones/boton reintentar apretado-01.png" type="Texture" id=67]
+[ext_resource path="res://botones/botones_hover/boton reintentar-02.png" type="Texture" id=68]
+[ext_resource path="res://botones/boton reintentar-01.png" type="Texture" id=69]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "comedia",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 31 ) ],
+"loop": true,
+"name": "drama",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 37 ) ],
+"loop": true,
+"name": "normal",
+"speed": 0.0
+} ]
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 33 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 2 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 20 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 47.7314, 30.7101 )
+
+[sub_resource type="SpriteFrames" id=17]
+animations = [ {
+"frames": [ ExtResource( 36 ), ExtResource( 25 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=19]
+size = 30
+font_data = ExtResource( 24 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.603922, 0.478431, 0.203922, 1 )
+border_color = Color( 0, 0, 0, 1 )
+border_blend = true
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+shadow_color = Color( 0.956863, 0.901961, 0.686275, 0.584314 )
+shadow_size = 13
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.309804, 0.290196, 0.290196, 1 )
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+
+[sub_resource type="DynamicFont" id=22]
+size = 30
+font_data = ExtResource( 24 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.486275, 0.184314, 0.184314, 1 )
+border_blend = true
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+shadow_color = Color( 0.964706, 0.764706, 0.764706, 0.682353 )
+shadow_size = 13
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 0.309804, 0.290196, 0.290196, 1 )
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+
+[sub_resource type="DynamicFont" id=12]
+size = 40
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 160
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=27]
+size = 160
+font_data = ExtResource( 24 )
+
+[sub_resource type="Theme" id=29]
+
+[sub_resource type="DynamicFont" id=28]
+size = 70
+font_data = ExtResource( 24 )
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 21 )
+
+[node name="Fondo" type="AnimatedSprite" parent="."]
+position = Vector2( 640, 359 )
+scale = Vector2( 0.670833, 0.668519 )
+frames = SubResource( 1 )
+animation = "normal"
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="reflectores_der" type="AnimatedSprite" parent="Fondo"]
+position = Vector2( 250.435, -38.8919 )
+rotation = 0.230383
+frames = SubResource( 16 )
+frame = 1
+playing = true
+
+[node name="reglector_izq" type="AnimatedSprite" parent="Fondo"]
+position = Vector2( -175.901, -92.7423 )
+frames = SubResource( 18 )
+frame = 1
+playing = true
+
+[node name="objetos" type="Node2D" parent="Fondo"]
+position = Vector2( -718.51, -632.742 )
+scale = Vector2( 1.49068, 1.49584 )
+script = ExtResource( 7 )
+rosa = ExtResource( 5 )
+tomate = ExtResource( 6 )
+botitas = ExtResource( 42 )
+comedia = ExtResource( 43 )
+drama = ExtResource( 44 )
+piano = ExtResource( 46 )
+bolsa = ExtResource( 47 )
+
+[node name="personaje" type="KinematicBody2D" parent="." groups=["bailarina"]]
+pause_mode = 1
+position = Vector2( 651, 426 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+speed = 250
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="personaje"]
+position = Vector2( 9.62456, -28.9516 )
+scale = Vector2( 0.321097, 0.381755 )
+frames = SubResource( 5 )
+frame = 9
+playing = true
+
+[node name="Area2D" type="Area2D" parent="personaje"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="personaje/Area2D"]
+position = Vector2( -3.5, -92 )
+scale = Vector2( 0.995153, 1.00944 )
+shape = SubResource( 7 )
+
+[node name="flores_audio" type="AudioStreamPlayer" parent="personaje"]
+pause_mode = 2
+stream = ExtResource( 39 )
+
+[node name="tomate_audio" type="AudioStreamPlayer" parent="personaje"]
+stream = ExtResource( 40 )
+
+[node name="zapatitos_audio" type="AudioStreamPlayer" parent="personaje"]
+stream = ExtResource( 48 )
+volume_db = -7.429
+
+[node name="comedia_audio" type="AudioStreamPlayer" parent="personaje"]
+stream = ExtResource( 49 )
+volume_db = -6.19
+
+[node name="drama_audio" type="AudioStreamPlayer" parent="personaje"]
+stream = ExtResource( 52 )
+volume_db = -6.19
+
+[node name="piano_audio" type="AudioStreamPlayer" parent="personaje"]
+stream = ExtResource( 50 )
+
+[node name="bolsa_audio" type="AudioStreamPlayer" parent="personaje"]
+stream = ExtResource( 51 )
+volume_db = -12.381
+
+[node name="telon" type="Sprite" parent="."]
+position = Vector2( 630, 276 )
+scale = Vector2( 0.670833, 0.668519 )
+texture = ExtResource( 32 )
+
+[node name="telon2" type="Sprite" parent="."]
+position = Vector2( 643, 42.9998 )
+scale = Vector2( 0.670833, 0.668519 )
+texture = ExtResource( 28 )
+
+[node name="personas" type="AnimatedSprite" parent="."]
+position = Vector2( 630, 588 )
+scale = Vector2( 0.670833, 0.668519 )
+frames = SubResource( 17 )
+frame = 1
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="interfaz" type="CanvasLayer" parent="."]
+pause_mode = 2
+script = ExtResource( 23 )
+
+[node name="vida" type="ProgressBar" parent="interfaz" groups=["vida"]]
+pause_mode = 1
+margin_left = 54.0
+margin_top = 641.0
+margin_right = 428.0
+margin_bottom = 682.0
+custom_colors/font_color = Color( 1, 0.992157, 0.992157, 1 )
+custom_fonts/font = SubResource( 19 )
+custom_styles/fg = SubResource( 20 )
+custom_styles/bg = SubResource( 21 )
+value = 100.0
+rounded = true
+
+[node name="TextureRect" type="TextureRect" parent="interfaz/vida"]
+margin_left = 378.0
+margin_top = -25.0
+margin_right = 486.0
+margin_bottom = 77.0
+texture = ExtResource( 54 )
+
+[node name="reputacion" type="ProgressBar" parent="interfaz" groups=["reputacion"]]
+margin_left = 840.0
+margin_top = 641.0
+margin_right = 1220.0
+margin_bottom = 688.0
+custom_fonts/font = SubResource( 22 )
+custom_styles/fg = SubResource( 23 )
+custom_styles/bg = SubResource( 24 )
+
+[node name="TextureRect" type="TextureRect" parent="interfaz/reputacion"]
+margin_left = -96.0
+margin_top = -41.0
+margin_right = 24.0
+margin_bottom = 79.0
+texture = ExtResource( 53 )
+
+[node name="boton_pausa_main" type="TextureButton" parent="interfaz"]
+margin_left = 35.0
+margin_top = 29.0
+margin_right = 631.0
+margin_bottom = 634.0
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 4 )
+
+[node name="menu_pausa" type="CanvasLayer" parent="interfaz"]
+pause_mode = 2
+visible = false
+
+[node name="fondo_pausa" type="ColorRect" parent="interfaz/menu_pausa"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0235294, 0, 0, 0.533333 )
+
+[node name="boton_pausa_salir" type="TextureButton" parent="interfaz/menu_pausa"]
+pause_mode = 2
+margin_left = 513.0
+margin_top = 420.0
+margin_right = 833.0
+margin_bottom = 506.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture_normal = ExtResource( 60 )
+texture_pressed = ExtResource( 59 )
+texture_hover = ExtResource( 58 )
+
+[node name="boton_pausa_volver" type="TextureButton" parent="interfaz/menu_pausa"]
+pause_mode = 2
+margin_left = 478.0
+margin_top = 239.0
+margin_right = 804.0
+margin_bottom = 322.0
+texture_normal = ExtResource( 55 )
+texture_pressed = ExtResource( 56 )
+texture_hover = ExtResource( 57 )
+
+[node name="boton_pausa_creditos" type="TextureButton" parent="interfaz/menu_pausa"]
+pause_mode = 2
+margin_left = 512.0
+margin_top = 342.0
+margin_right = 832.0
+margin_bottom = 428.0
+rect_scale = Vector2( 0.8, 0.8 )
+texture_normal = ExtResource( 61 )
+texture_pressed = ExtResource( 62 )
+texture_hover = ExtResource( 63 )
+
+[node name="creditos" type="CanvasLayer" parent="interfaz"]
+layer = 2
+visible = false
+
+[node name="fondo_creditos" type="ColorRect" parent="interfaz/creditos"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.866667 )
+
+[node name="boton_volver_creditos" type="TextureButton" parent="interfaz/creditos"]
+pause_mode = 2
+margin_left = 886.0
+margin_top = 563.0
+margin_right = 1210.0
+margin_bottom = 653.0
+texture_normal = ExtResource( 66 )
+texture_pressed = ExtResource( 64 )
+texture_hover = ExtResource( 65 )
+
+[node name="texto" type="Label" parent="interfaz/creditos"]
+pause_mode = 2
+margin_left = 151.0
+margin_top = 182.0
+margin_right = 663.0
+margin_bottom = 824.0
+custom_colors/font_color = Color( 0.85098, 0.729412, 0.498039, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "GAME DESIGN
+Florencia Paula Cardinali 
+Micah Cofré
+Victoria Carballo Zink
+Xiomara Badano
+
+ILUSTRACIÓN
+Victoria Carballo Zink"
+align = 1
+
+[node name="texto2" type="Label" parent="interfaz/creditos"]
+pause_mode = 2
+margin_left = 667.0
+margin_top = 197.0
+margin_right = 1179.0
+margin_bottom = 839.0
+custom_colors/font_color = Color( 0.85098, 0.729412, 0.498039, 1 )
+custom_fonts/font = SubResource( 12 )
+text = "MÚSICA Y SFX
+Micah Cofré
+
+PROGRAMACIÓn
+Xiomara Badano
+Florencia Paula Cardinali"
+align = 1
+
+[node name="game_over" type="CanvasLayer" parent="interfaz"]
+pause_mode = 2
+visible = false
+
+[node name="fondo_GO" type="ColorRect" parent="interfaz/game_over"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0156863, 0, 0, 0.521569 )
+
+[node name="GO" type="Label" parent="interfaz/game_over"]
+pause_mode = 2
+margin_left = 203.0
+margin_top = 161.0
+margin_right = 1076.0
+margin_bottom = 321.0
+custom_colors/font_color = Color( 0.843137, 0.717647, 0.470588, 0.921569 )
+custom_colors/font_color_shadow = Color( 0.292969, 0.01688, 0.01688, 1 )
+custom_constants/shadow_offset_x = 6
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 1
+custom_fonts/font = SubResource( 13 )
+text = "Game Over"
+
+[node name="boton_reintentar" type="TextureButton" parent="interfaz/game_over"]
+pause_mode = 2
+margin_left = 488.0
+margin_top = 340.0
+margin_right = 816.0
+margin_bottom = 430.0
+texture_normal = ExtResource( 69 )
+texture_pressed = ExtResource( 67 )
+texture_hover = ExtResource( 68 )
+
+[node name="boton_salir_GO" type="TextureButton" parent="interfaz/game_over"]
+pause_mode = 2
+margin_left = 488.0
+margin_top = 440.0
+margin_right = 808.0
+margin_bottom = 526.0
+texture_normal = ExtResource( 60 )
+texture_pressed = ExtResource( 59 )
+texture_hover = ExtResource( 58 )
+
+[node name="win" type="CanvasLayer" parent="interfaz"]
+pause_mode = 2
+visible = false
+
+[node name="fondo_WIN" type="ColorRect" parent="interfaz/win"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.686275, 0.572549, 0.392157, 0.65098 )
+
+[node name="boton_siguiente_nivel" type="TextureButton" parent="interfaz/win"]
+pause_mode = 2
+margin_left = 485.0
+margin_top = 342.0
+margin_right = 806.0
+margin_bottom = 417.0
+texture_normal = ExtResource( 55 )
+texture_pressed = ExtResource( 56 )
+texture_hover = ExtResource( 57 )
+
+[node name="boton_salir_win" type="TextureButton" parent="interfaz/win"]
+pause_mode = 2
+margin_left = 488.0
+margin_top = 440.0
+margin_right = 808.0
+margin_bottom = 526.0
+texture_normal = ExtResource( 60 )
+texture_pressed = ExtResource( 59 )
+texture_hover = ExtResource( 58 )
+
+[node name="nivel_superado" type="Label" parent="interfaz/win"]
+margin_left = 23.0
+margin_top = 140.0
+margin_right = 1268.0
+margin_bottom = 300.0
+input_pass_on_modal_close_click = false
+custom_colors/font_color = Color( 0.957031, 0.874051, 0.657024, 1 )
+custom_colors/font_color_shadow = Color( 0.350586, 0.00239658, 0.00239658, 1 )
+custom_constants/shadow_offset_x = 6
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 27 )
+text = "¡Nivel Superado!"
+
+[node name="aplausos_win" type="AudioStreamPlayer" parent="interfaz"]
+pause_mode = 2
+stream = ExtResource( 38 )
+volume_db = -7.429
+
+[node name="iu_select" type="AudioStreamPlayer" parent="interfaz"]
+stream = ExtResource( 41 )
+volume_db = -13.619
+
+[node name="abucheos_game_over" type="AudioStreamPlayer2D" parent="interfaz"]
+stream = ExtResource( 45 )
+
+[node name="nivel" type="Label" parent="interfaz" groups=["nivel"]]
+margin_left = 861.0
+margin_top = 38.0
+margin_right = 1250.0
+margin_bottom = 183.0
+theme = SubResource( 29 )
+custom_colors/font_color = Color( 0.85098, 0.729412, 0.498039, 1 )
+custom_colors/font_color_shadow = Color( 0.282353, 0.00784314, 0.00784314, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 3
+custom_constants/shadow_as_outline = 5
+custom_fonts/font = SubResource( 28 )
+text = "Nivel: "
+
+[node name="timer_objetos" type="Timer" parent="."]
+wait_time = 0.756
+autostart = true
+
+[node name="control_estados" type="Timer" parent="."]
+pause_mode = 1
+wait_time = 10.0
+one_shot = true
+
+[node name="musica_de_fondo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
+volume_db = 4.952
+
+[connection signal="inicio_comedia" from="." to="Fondo/objetos" method="_on_Main_inicio_comedia"]
+[connection signal="inicio_drama" from="." to="Fondo/objetos" method="_on_Main_inicio_drama"]
+[connection signal="normalidad" from="." to="Fondo/objetos" method="_on_Main_normalidad"]
+[connection signal="comedia" from="personaje" to="." method="_on_personaje_comedia"]
+[connection signal="derrota" from="personaje" to="interfaz" method="_on_personaje_derrota"]
+[connection signal="drama" from="personaje" to="." method="_on_personaje_drama"]
+[connection signal="victoria" from="personaje" to="interfaz" method="_on_personaje_victoria"]
+[connection signal="body_entered" from="personaje/Area2D" to="personaje" method="_on_Area2D_body_entered"]
+[connection signal="normalidad" from="interfaz" to="Fondo/objetos" method="_on_interfaz_normalidad"]
+[connection signal="nuevo_nivel" from="interfaz" to="personaje" method="_on_interfaz_nuevo_nivel"]
+[connection signal="reintentar" from="interfaz" to="personaje" method="_on_interfaz_reintentar"]
+[connection signal="pressed" from="interfaz/boton_pausa_main" to="interfaz" method="_on_boton_pausa_main_pressed"]
+[connection signal="pressed" from="interfaz/menu_pausa/boton_pausa_salir" to="interfaz" method="_on_boton_pausa_salir_pressed"]
+[connection signal="pressed" from="interfaz/menu_pausa/boton_pausa_volver" to="interfaz" method="_on_boton_pausa_volver_pressed"]
+[connection signal="pressed" from="interfaz/menu_pausa/boton_pausa_creditos" to="interfaz" method="_on_boton_pausa_creditos_pressed"]
+[connection signal="pressed" from="interfaz/creditos/boton_volver_creditos" to="interfaz" method="_on_boton_volver_creditos_pressed"]
+[connection signal="pressed" from="interfaz/game_over/boton_reintentar" to="interfaz" method="_on_boton_reintentar_pressed"]
+[connection signal="pressed" from="interfaz/game_over/boton_salir_GO" to="interfaz" method="_on_boton_salir_GO_pressed"]
+[connection signal="pressed" from="interfaz/win/boton_siguiente_nivel" to="interfaz" method="_on_boton_siguiente_nivel_pressed"]
+[connection signal="pressed" from="interfaz/win/boton_salir_win" to="interfaz" method="_on_boton_salir_win_pressed"]
+[connection signal="timeout" from="timer_objetos" to="Fondo/objetos" method="_on_timer_objetos_timeout"]
+[connection signal="timeout" from="control_estados" to="." method="_on_control_estados_timeout"]
+[connection signal="finished" from="musica_de_fondo" to="." method="_on_musica_de_fondo_finished"]

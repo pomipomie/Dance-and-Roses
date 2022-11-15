@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Object.gd" type="Script" id=1]
+[ext_resource path="res://OBJETOS/ZAPATOS.png" type="Texture" id=2]
+
+[sub_resource type="PhysicsMaterial" id=3]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 37.1452
+
+[node name="Object" type="RigidBody2D" groups=["items", "zapatos"]]
+position = Vector2( 0, -2 )
+physics_material_override = SubResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -0.499998, -1.99999 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 9, 3 )
+shape = SubResource( 2 )
